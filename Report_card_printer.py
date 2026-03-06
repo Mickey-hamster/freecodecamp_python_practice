@@ -7,7 +7,7 @@ print(name, type(name))
 # print the type of the variable "name"
 
 is_student = True 
-print(is_student, type(is_student)
+print(is_student, type(is_student))
 # print the value of variable is_student and the type of the value 
 
 age = 20

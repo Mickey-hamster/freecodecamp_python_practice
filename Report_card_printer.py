@@ -15,3 +15,6 @@ print(age, type(age))
 
 score = 80.5
 print(isinstance(score, int))
+# to print the variable "score" and check where the value is an integer 
+print(isinstance(score, float))
+print(score, type(score))

@@ -16,3 +16,11 @@ print(employee_info)
 experience_years = 5
 experience_info = "Experience: " + str(experience_years) + " years"
 print(experience_info)
+
+position = "Data Analyst" 
+salary = 75000
+
+employee_card = f'Employee: {full_name} | Age: {employee_age} | Position: {position} | Salary: ${salary}'
+print(employee_card)g
+
+

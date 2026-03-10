@@ -15,13 +15,24 @@ def caesar(text,shift, encrypt = True):
     if not encrypt:  shift = - shift 
     # if not True (False), turn shift into negative 
   
-  shifted_alphabet = alphabet[shift:] +alphabet[:shift]
+    shifted_alphabet = alphabet[shift:] +alphabet[:shift]
 # create a variable called shifted_alphabet which is made up of characters from alphabet start from position of shift
 # ended at the end of alphabet and the start of alphabet, ended at the characher before shift
   
-  translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())
+    translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())
 # to create a translation table where each character in alphabet is matched to that in shifted_alphabet in the same position
 
-  encrypted_text = text.translate
+    encrypted_text = text.translate(translation_table) 
+    return encrypted_text 
+
+def encrypt(text,shift):
+  return caesar(text, shift)
+def decrypt(text,shift):
+  return caesar(text,shift, encrypt = False) 
+
+encrypted_text = "Pbhentr vf sbhaq va hayvxryl cynprf."
+
+decrypted_text = decrypt(encrypted_text, 13)
+print(decrypted_text)
   
   

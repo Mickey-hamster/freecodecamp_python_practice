@@ -4,9 +4,12 @@
 # fixed positions along the alphabet
 
 def caesar(text,shift, encrypt = True):
-  if not isinstance(shift, int)
-  return "Shift must be an integer value."
+  if not isinstance(shift, int):
+    return "Shift must be an integer value."
   # if not true, return the string
+  if shift <1 or shift > 25: 
+    return "Shift must be an integer between 1 and 25"
+    
   alphabet = 'abcdefghijklmnopqrstuvwxyz'
   shift = 5
   shifted_alphabet = alphabet[shift:] +alphabet[:shift]

@@ -3,7 +3,10 @@
 # A type of substitution cipher in which each letter in the plaintext is replaced by a letter from some 
 # fixed positions along the alphabet
 
-def caesar(text,shift):
+def caesar(text,shift, encrypt = True):
+  if not isinstance(shift, int)
+  return "Shift must be an integer value."
+  # if not true, return the string
   alphabet = 'abcdefghijklmnopqrstuvwxyz'
   shift = 5
   shifted_alphabet = alphabet[shift:] +alphabet[:shift]
